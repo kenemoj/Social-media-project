@@ -1,0 +1,19 @@
+@import "../../style.scss";
+
+.rightbar{
+    @include themify($themes){
+        background-color: themed("bg");
+        padding: 20px 70px;
+        flex: 3;
+        position: sticky;
+        top: 70px;
+        height: calc(100vh - 70px);
+
+        @include mobile 
+        {
+            display: none;
+        }
+    }
+    
+    
+}

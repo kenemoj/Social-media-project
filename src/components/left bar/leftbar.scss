@@ -1,0 +1,23 @@
+@import "../../style.scss";
+
+.leftbar{
+
+    @include themify($themes){
+        background-color: themed("bg");
+        padding: 20px 70px;
+        flex: 2;
+        position: sticky;
+        top: 70px;
+        height: calc(100vh - 70px);
+        overflow: scroll;
+        background-color: themed("bg");
+        color: themed("textColor");
+
+        @include mobile 
+        {
+            display: none;
+        }
+        
+    
+    }
+}
